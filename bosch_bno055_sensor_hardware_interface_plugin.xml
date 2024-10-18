@@ -1,0 +1,9 @@
+<library path="bosch_bno055_sensor_hardware_interface">
+  <class name="bosch_bno055_sensor_hardware_interface/BoschBNO055SensorHardwareInterface"
+         type="bosch_bno055_sensor_hardware_interface::BoschBNO055SensorHardwareInterface"
+         base_class_type="hardware_interface::SensorInterface">
+    <description>
+        Plugin configuration for Bosch BNO055 sensor as hardware sensor interface for use with the library ROS2 Control    
+    </description>
+  </class>
+</library>

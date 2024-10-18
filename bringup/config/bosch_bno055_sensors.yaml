@@ -1,0 +1,14 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+# Configuración para el sensor Bosch BNO055
+bosch_bno055_sensor_configuration:
+  ros__parameters:
+    sensor_name: "bosch_bno055_ahrs_frame"  # Nombre del sensor (por defecto 'bosch_bno055')
+    frame_id: "bosch_bno055_frame"          # Identificador del marco de coordenadas del sensor (por defecto 'bno055')
+    ros_topic_prefix: "bno055/"             # Prefijo de los tópicos ROS a utilizar (por defecto 'bno055/')
+    uart_port: "/dev/ttyUSB0"               # Puerto UART a utilizar (por defecto '/dev/ttyUSB0')
+    uart_timeout: 0.1                       # Timeout para transmisiones UART en segundos (por defecto 0.1)
+    update_rate: 100                        # Frecuencia (Hz) para leer y publicar datos del sensor (por defecto 100 Hz)
+    calib_update_rate: 0.1                  # Frecuencia (Hz) para leer y publicar el estado de calibración del sensor (por defecto 0.1 Hz)
